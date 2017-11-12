@@ -22,10 +22,7 @@ class System
 
   def total_mass
     weigh_in = 0
-    @bodies.each do |celest|
-      weigh_in += celest.masser
-    end
-
+    @bodies.each {|celest|  weigh_in += celest.masser}
     return weigh_in
   end
 
